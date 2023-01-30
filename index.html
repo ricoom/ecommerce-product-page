@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Ricoom App | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <nav>
+        <div class="humbagar" id="open-btn">
+          <img src="/images/icon-menu.svg" alt="">
+        </div>
+        <div class="logo">
+          <img src="/images/logo.svg" alt="">
+        </div>
+        <div>
+         
+          <ul id="menu">
+            <div class="close-btn" id="close-btn">
+              <img src="/images/icon-close.svg" alt="">
+            </div>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+      </nav>
+      <div class="user-cart">
+        <div class="cart"><img src="/images/icon-cart.svg" alt=""></div>
+        <div class="user-profile"><img src="/images//image-avatar.png" alt=""></div>
+      </div>
+    </header>
+    <div class="mobile-device-img">
+      <div class="image-chooser">
+        <div class="prev" >
+          <img src="/images/icon-previous.svg" alt="">
+        </div>
+        <div class="next" id="next-btn" >
+          <img src="/images/icon-next.svg" alt="">
+        </div>
+        
+
+      </div>
+      <div class="image-slide">
+        <img src="/images/image-product-2.jpg" alt="">
+      </div>
+      <div class="image-slide show">
+        <img src="/images/image-product-1.jpg" alt="">
+      </div>
+      <div class="image-slide">
+        <img src="/images/image-product-3.jpg" alt="">
+      </div>
+      <div class="image-slide ">
+        <img src="/images/image-product-4.jpg" alt="">
+      </div>
+
+    </div>
+    <!-- --product page -->
+    <div class="product-page">
+      <div class="col-1">
+        <div class="product-image">
+
+          <div class="image-list hidden">
+            <img src="/images/image-product-2.jpg" alt="">
+          </div>
+          <div class="image-list">
+            <img src="/images/image-product-1.jpg" alt="">
+          </div>
+          <div class="image-list hidden">
+            <img src="/images/image-product-3.jpg" alt="">
+          </div>
+          <div class="image-list hidden">
+            <img src="/images/image-product-4.jpg" alt="">
+          </div>
+
+
+
+
+          <div class="img-row">
+            <div class="img-control" onclick="showImage('product-1')">
+              <img src="/images/image-product-1-thumbnail.jpg" alt="">
+
+            </div>
+            <div class="img-control" onclick="showImage('product-2')">
+              <img src="/images/image-product-2-thumbnail.jpg" alt="">
+            </div>
+            <div class="img-control" onclick="showImage('product-3')">
+              <img src="/images/image-product-3-thumbnail.jpg" alt="">
+            </div>
+            <div class="img-control" onclick="showImage('product-4')">
+              <img src="/images/image-product-4-thumbnail.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="product-description">
+          <h6>SNEAKER COMPANY</h6>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <P>These low profile sneckers are your perfect casual wear companion. Featuring a durable ruber outer
+            sole, they'll withstand everything the weather can offer.
+          </P>
+          <h3>$125.00 <span>50%</span></h3>
+          <p style="margin-top: 5px;">$250.00</p>
+
+          <div class="controls">
+            <div class="btn qty">
+              <i><img src="/images/icon-minus.svg" alt=""></i>
+              <h5>3</h5>
+              <i><img src="/images/icon-plus.svg" alt=""></i>
+            </div>
+            <button class="btn">add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <script src="/script.js"></script>
+
+</body>
+
+</html>
