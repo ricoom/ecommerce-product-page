@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    margin-top: 20px;
+    padding-left: 10%;
+    padding-right: 4%;
+}
+
+/* header section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(223, 64%, 98%);
+    padding-bottom: 10px;
+
+}
+
+header nav {
+    display: inline-flex;
+    gap: 60px;
+
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: hsl(219, 9%, 45%);
+    position: relative;
+}
+
+header nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: hsl(26, 100%, 55%);
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+    transition: 0.5s;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+header nav ul li a:hover {
+    color: hsl(220, 13%, 13%);
+}
+
+.logo img {
+    width: 100%;
+}
+
+header .user-cart {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header .user-cart .cart img {
+    width: 80%;
+}
+
+header .user-cart .user-profile img {
+    width: 36%;
+    cursor: pointer;
+    border: 0 solid hsl(26, 100%, 55%);
+    border-radius: 100%;
+}
+
+header .user-cart .user-profile img:hover {
+
+    border: 1px solid hsl(26, 100%, 55%);
+    border-radius: 100%;
+
+}
+
+/* header section end */
+.product-page {
+    display: flex;
+    padding: 70px;
+
+}
+
+.product-page .col-1 {
+    flex-basis: 40%;
+}
+
+.product-page .col-2 {
+    flex-basis: 40%;
+}
+
+.product-image img {
+    width: 80%;
+    border-radius: 10px;
+
+
+}
+
+.product-description {
+    padding-top: 40px;
+}
+
+.product-description h6 {
+    color: hsl(26, 100%, 55%);
+    letter-spacing: .1em;
+    margin-bottom: 20px;
+}
+
+.product-description p {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: hsl(219, 9%, 45%);
+}
+
+.product-description h3 {
+    margin-top: 15px;
+}
+
+.product-description h3 span {
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    font-size: 0.6em;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+    margin-left: 10px;
+}
+
+.controls {
+    display: inline-flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    display: inline-block;
+    padding: 10px 50px 10px 50px;
+    border-radius: 5px;
+    background: hsl(26, 100%, 55%);
+    color: hsl(0, 0%, 100%);
+}
+
+.btn.qty {
+    background: hsl(223, 64%, 98%);
+    display: inline-flex;
+    justify-content: space-between;
+    width: 40%;
+    padding: 10px 5px 10px 5px;
+    justify-items: center;
+
+}
+
+.qty i {
+    width: 10%;
+
+}
+
+.product-description h5 {
+    color: black;
+    align-self: center;
+}
+
+.img-row {
+    display: flex;
+    width: 80%;
+    margin-top: 10px;
+    gap: 10px;
+    margin-left: 7px;
+}
+
+.hidden {
+    display: none;
+}
+
+.img-row .img-control {
+    cursor: pointer;
+    transition: transform 0.5s;
+
+}
+
+.img-row .img-control.active {
+    border: 1px solid hsl(26, 100%, 55%);
+}
+
+.img-row .img-control:hover {
+    transform: translateY(-6px);
+    opacity: 50%;
+
+}
+
+.mobile-device-img {
+    display: none;
+}
+.humbagar{
+    display: none;
+}
+.close-btn{
+    display: none;
+}
+
+@media only screen and (max-width:375px) {
+    header nav ul {
+        display: none;
+        gap: 20px;
+        list-style: none;
+        background: #fff;
+        min-height: 100%;
+        position: fixed;
+        right: 195px;
+        width: 180px;
+        padding-left: 40px;
+        line-height: 40px;
+        font-weight: 700;
+
+       
+        
+
+    }
+           .close-btn{
+            display: block;
+        }
+        .humbagar {
+            display: block;
+            width: 30%;
+        }
+                .humbagar img{
+                    width: 90%;
+
+                }
+
+    .container {
+        margin-top: 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    header {
+        display: inline-flex;
+        gap: 30px;
+        align-items: center;
+        padding-bottom: 10px;
+        padding: 10px;
+
+    }
+
+    .product-page .col-2 {
+        flex-basis: 100%;
+    }
+
+
+
+    .product-image img {
+        display: none;
+        width: 80%;
+        border-radius: 10px;
+
+
+    }
+
+    .product-description h1 {
+        font-size: 2em;
+    }
+
+    .product-page {
+        display: inline-block;
+        padding: 10px;
+
+    }
+
+    .mobile-device-img {
+        display: inline-block;
+        
+
+    }
+.mobile-device-img .image-slide.show{
+    display: inline-block;
+}
+.mobile-device-img .image-slide{
+    display: none;
+}
+    .mobile-device-img .image-chooser {
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+
+
+
+
+
+    }
+
+    .mobile-device-img .image-chooser img {
+        background: #fff;
+        border-radius: 100%;
+        padding: 9px;
+        /* position: absolute; */
+        top: 130px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+    }
+
+    .mobile-device-img img {
+        width: 100%;
+    }
+
+}
