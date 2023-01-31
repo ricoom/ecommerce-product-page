@@ -6,7 +6,7 @@ let close_btn=document.getElementById('close-btn')
 let menu=document.getElementById('menu')
 
 const nextBtn=document.getElementById('next-btn')
-
+let i=0;
 function showImage(imageName){
 img_selector.forEach(selector=>{
     //remove the border
@@ -43,4 +43,35 @@ menu.style.display='block'
 close_btn.addEventListener('click',()=>{
 menu.style.display='none'
  }) 
+function showNext() {
+    
+    if(i<3){
+         img_slide[i].classList.remove('show');
 
+    i++
+      console.log(i)
+     img_slide[i].classList.add('show');
+      console.log(img_slide[i])
+
+    }
+        
+
+  
+}
+function showprev() {
+  
+ if(i<3){
+img_slide[i].classList.remove('show');
+
+    i++
+      console.log(i)
+     img_slide[i].classList.add('show');
+      console.log(img_slide[i])
+      
+ }
+  
+    
+         
+
+        
+}
